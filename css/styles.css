@@ -11063,13 +11063,18 @@ html {
   background-color: #1a252f;
 }
 
-.about {
+.about,
+.skill {
   width: 70%;
   margin: 0 auto;
 }
+.skill-detail {
+  padding: 0 1.3rem;
+}
 
-@media screen and (max-width: 768px) {
-  .about {
+@media screen and (max-width: 991px) {
+  .about,
+  .skill {
     width: 100%;
   }
 }
