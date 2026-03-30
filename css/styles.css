@@ -140,7 +140,6 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
-  margin-top: 2rem;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -11077,5 +11076,58 @@ html {
   .about,
   .skill {
     width: 100%;
+  }
+}
+
+.axes_work {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.3rem;
+}
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 2rem;
+}
+.banner-grid img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .banner-grid {
+    gap: 8px;
+  }
+}
+
+
+
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
+
+.options {
+  padding: .5rem;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+}
+.modal h3 {
+  padding: 3rem 0 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .axes_work {
+    width: auto;
   }
 }
